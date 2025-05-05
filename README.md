@@ -23,7 +23,7 @@ This project introduces an innovative approach to broadcast audio in public and 
 
 ## Structure
     .
-    ├── pcb                 # PCB files(autodesk, gerber, bom, schematics)   
+    ├── pcb                 # PCB files(KiCad, gerber, bom, schematics)   
     ├── src                 # Program and board files (program, board)   
     ├── LICENSE
     └── README.md
