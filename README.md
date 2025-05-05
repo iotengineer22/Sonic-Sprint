@@ -2,16 +2,16 @@
 This repository present solution for the Sonic Sprint
 
 
-[Board Designer Competition](https://www.hackster.io/contests/board-designer).
+[Sonic Sprint](https://www.hackster.io/contests/SonicSprint).
 
 ## Introduction
-**First of all thank you to Nordic Semiconductor, Autodesk, PCBWay and hackster.io for hosting this exciting competition.**
+**First of all thank you to Nordic Semiconductor, PCBWay and hackster.io for hosting this exciting competition.**
 
 The main project is primarily summarized on hackster.io, so please refer to it there 
 
-[Maker's nRF54L15 Debug Board](https://www.hackster.io/iotengineer22/maker-s-nrf54l15-debug-board-1a6a88)
+[Adaptive Directional BLE Audio Speaker](https://www.hackster.io/iotengineer22/adaptive-directional-ble-audio-speaker-2d892d)
 
-In this project, we provide Maker's nRF54L15 Debug Board. We have designed a compact board featuring the powerful nRF54L15 Wireless SOC.
+This project introduces an innovative approach to broadcast audio in public and semi-public environments, leveraging nRF5340 and BLE Audio.
 
 ![3D1](imgs/3D1.png)
 
