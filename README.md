@@ -78,3 +78,8 @@ This is BOM overview.
 
 ![bom2](imgs/bom2.png)
 
+![bom3](imgs/bom3.png)
+
+![bom4](imgs/bom4.png)
+
+![bom5](imgs/bom5.png)
