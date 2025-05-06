@@ -36,24 +36,24 @@ This is Main electrical diagram.
 **For details, see the PDF file.**
 [PDF schematics](pcb/schematics)
 
-![schematics1](imgs/cir1.png)
+![schematics1](imgs/sch1.png)
 
-![schematics2](imgs/cir2.png)
+![schematics2](imgs/sch2.png)
 
 
 ## PCB ArtWork overview
 
 This is Artwork overview.
 
-**For details, see the PCB files in Autodesk Fusion or Gerber data.**
+**For details, see the PCB files in KiCad or Gerber data.**
 
-[Autodesk_project_file](pcb/autodesk)
+[Autodesk_project_file](pcb/kicad)
 
 [Gerber_data](pcb/gerber)
 
-![artwork1](imgs/layer.png)
+![size](imgs/size.png)
 
-![artwork2](imgs/size.png)
+![artwork1](imgs/1-layer.png)
 
 
 ## PCB BOM
@@ -65,4 +65,6 @@ This is BOM overview.
 [BOM_file](pcb/bom)
 
 ![bom1](imgs/bom1.png)
+
+![bom2](imgs/bom2.png)
 
