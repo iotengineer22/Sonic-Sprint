@@ -23,7 +23,7 @@ This project introduces an innovative approach to broadcast audio in public and 
 
 ## Structure
     .
-    ├── pcb                 # PCB files(KiCad, gerber, bom, schematics)   
+    ├── pcb                 # PCB files(KiCad, gerber, bom, schematics, EQ)   
     ├── src                 # Program and board files (program, board)   
     ├── LICENSE
     └── README.md
@@ -40,6 +40,16 @@ This is Main electrical diagram.
 
 ![schematics2](imgs/sch2.png)
 
+![schematics3](imgs/sch3.png)
+
+![schematics4](imgs/sch4.png)
+
+![schematics5](imgs/sch5.png)
+
+![schematics6](imgs/sch6.png)
+
+![schematics7](imgs/sch7.png)
+
 
 ## PCB ArtWork overview
 
@@ -47,7 +57,7 @@ This is Artwork overview.
 
 **For details, see the PCB files in KiCad or Gerber data.**
 
-[Autodesk_project_file](pcb/kicad)
+[KiCad_project_file](pcb/kicad)
 
 [Gerber_data](pcb/gerber)
 
