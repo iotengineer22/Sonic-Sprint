@@ -69,6 +69,26 @@ multi-layer
 
 ![artwork1](imgs/1-layer.png)
 
+2-layer
+
+![artwork2](imgs/2-layer.png)
+
+3-layer
+
+![artwork3](imgs/3-layer.png)
+
+4-layer
+
+![artwork1](imgs/4-layer.png)
+
+5-layer
+
+![artwork1](imgs/5-layer.png)
+
+6-layer
+
+![artwork1](imgs/6-layer.png)
+
 
 ## PCB BOM
 
