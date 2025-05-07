@@ -2,10 +2,12 @@
 
 This audio data was used for testing purposes.
 The audio was generated using the Google Cloud Text-to-Speech service, based on the introductory text of the nRF5340 documentation.
+
 Separate audio tracks were created for English, German, Chinese, and Spanish.
 https://cloud.google.com/text-to-speech
 
 https://www.nordicsemi.com/Products/nRF5340
+
 
 
 These individual language tracks were then mixed or combined using ffmpeg into either 2-channel (2-language) or 4-channel (4-language) audio files.
