@@ -75,6 +75,9 @@
 
 	i2c1_default: i2c1_default {
 		group1 {
+			// add
+			bias-pull-up;
+			
 			psels = <NRF_PSEL(TWIM_SDA, 1, 2)>,
 				<NRF_PSEL(TWIM_SCL, 1, 3)>;
 		};

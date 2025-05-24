@@ -5,6 +5,8 @@
  */
 #include "nrf5340_audio_dk_nrf5340_cpuapp_common-pinctrl.dtsi"
 #include <zephyr/dt-bindings/sensor/ina230.h>
+// add
+#include <zephyr/dt-bindings/regulator/npm1300.h>
 
 / {
 	chosen {
@@ -39,7 +41,7 @@
 	pmic {
 		compatible = "nordic,npm1100";
 		nordic,iset-gpios = <&gpio0 23 GPIO_ACTIVE_HIGH>;
-	};
+	};	
 
 	board_id: board_id {
 		compatible = "voltage-divider";
@@ -75,6 +77,8 @@
 		blue-pwm-led = &rgb1_blue_pwm_led;
 	};
 };
+
+
 
 &vregmain {
 	regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
@@ -202,6 +206,78 @@ arduino_i2c: &i2c1 {
 	// 	current-lsb-microamps = <1>;
 	// 	rshunt-micro-ohms = <1000000>;
 	// };
+
+	// add
+	npm1300_ek_pmic: pmic@6b {
+		compatible = "nordic,npm1300";
+		reg = <0x6b>;
+
+		npm1300_ek_gpio: gpio-controller {
+			compatible = "nordic,npm1300-gpio";
+			gpio-controller;
+			#gpio-cells = <2>;
+			ngpios = <5>;
+		};
+
+		npm1300_ek_regulators: regulators {
+			compatible = "nordic,npm1300-regulator";
+
+			/* limits are set to min/max allowed values */
+			npm1300_ek_buck1: BUCK1 {
+				regulator-min-microvolt = <1000000>;
+				regulator-max-microvolt = <3300000>;
+			};
+
+			npm1300_ek_buck2: BUCK2 {
+				regulator-min-microvolt = <1000000>;
+				regulator-max-microvolt = <3300000>;
+			};
+
+			npm1300_ek_ldo1: LDO1 {
+				regulator-min-microvolt = <1000000>;
+				regulator-max-microvolt = <3300000>;
+			};
+
+			npm1300_ek_ldo2: LDO2 {
+				regulator-min-microvolt = <1000000>;
+				regulator-max-microvolt = <3300000>;
+			};
+		};
+
+		npm1300_ek_charger: charger {
+			compatible = "nordic,npm1300-charger";
+			term-microvolt = <4150000>;
+			term-warm-microvolt = <4000000>;
+			current-microamp = <150000>;
+			dischg-limit-microamp = <1000000>;
+			vbus-limit-microamp = <500000>;
+			thermistor-ohms = <10000>;
+			thermistor-beta = <3380>;
+			charging-enable;
+		};
+
+		npm1300_ek_buttons: buttons {
+			compatible = "gpio-keys";
+			pmic_button0: pmic_button_0 {
+				gpios = < &npm1300_ek_gpio 0 GPIO_ACTIVE_HIGH>;
+				label = "Pmic button switch 0";
+			zephyr,code = <INPUT_KEY_0>;
+			};
+		};
+
+		npm1300_ek_leds: leds {
+			compatible = "nordic,npm1300-led";
+			nordic,led0-mode = "error";
+			nordic,led1-mode = "charging";
+			nordic,led2-mode = "host";
+		};
+	};
+};
+
+// add
+&npm1300_ek_pmic {
+	host-int-gpios = <&gpio1 11 0>;
+	pmic-int-pin = <3>;
 };
 
 arduino_spi: &spi4 {
