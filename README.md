@@ -21,6 +21,15 @@ This project introduces an innovative approach to broadcast audio in public and 
 
 ![ac2](imgs/actual2.jpg)
 
+## History
+
+Revision: -T to -U
+
+The pinout for the J2 (SWD) connector has been modified. (This change was made because the previous pin assignment was incorrect.)
+
+Please note: The above photograph displays the -T revision of the board.
+
+
 ## Structure
     .
     ├── pcb                 # PCB files(KiCad, gerber, bom, schematics, EQ)   
